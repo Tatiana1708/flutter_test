@@ -12,34 +12,37 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Image.asset(
-              'assets/icons/Plan de travail 2.png',
-              height: 100,
-              fit: BoxFit.fill,
-            ),
-            Row(
-              children: [
-                Text(
-                  'Hello',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.red),
-                ),
-                SizedBox(width: 5),
-                Text(
-                  'Username',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.red),
-                ),
-              ],
-            ),
-          ],
+        title: Container(
+          padding: EdgeInsets.only(top: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Image.asset(
+                'assets/icons/Plan de travail 2.png',
+                height: 100,
+                fit: BoxFit.fill,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Hello',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.red),
+                  ),
+                  SizedBox(width: 5),
+                  Text(
+                    'Username',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.red),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       body: SingleChildScrollView(
